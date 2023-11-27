@@ -18,8 +18,7 @@ public class SuburbController {
     private SuburbService suburbService;
     @GetMapping
     public ResponseEntity<List<Suburb>> getAll() {
-//        List<Suburb> allSuburbs = this.suburbService.getAll();
-//        return new ResponseEntity<>(allSuburbs, HttpStatus.OK);
-        return new ResponseEntity<>(new ArrayList(), HttpStatus.OK);
+        List<Suburb> allSuburbs = this.suburbService.getAll();
+        return new ResponseEntity<>(allSuburbs, HttpStatus.OK);
     }
 }
