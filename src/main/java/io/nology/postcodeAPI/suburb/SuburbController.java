@@ -35,5 +35,12 @@ public class SuburbController {
         return new ResponseEntity<>(allSuburbs, HttpStatus.OK);
     }
 
+    @GetMapping("/by-name")
+    @ResponseBody
+    public ResponseEntity<List<Suburb>> getAllByName(@RequestParam String name) {
+        List<Suburb> allSuburbs = this.suburbService.getAllByName(name);
+        return new ResponseEntity<>(allSuburbs, HttpStatus.OK);
+    }
+
 
 }

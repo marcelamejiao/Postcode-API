@@ -32,4 +32,8 @@ public class SuburbService {
     public List<Suburb> getAllByPostcode(String postcode) {
         return this.suburbRepository.findByPostcode(postcode);
     }
+
+    public List<Suburb> getAllByName(String name) {
+        return this.suburbRepository.findByName(name);
+    }
 }

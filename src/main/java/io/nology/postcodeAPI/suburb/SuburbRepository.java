@@ -7,4 +7,6 @@ import java.util.List;
 public interface SuburbRepository extends JpaRepository<Suburb, Long> {
 
     List<Suburb> findByPostcode(String postcode);
+
+    List<Suburb> findByName(String name);
 }
