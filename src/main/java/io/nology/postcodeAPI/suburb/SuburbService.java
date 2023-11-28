@@ -28,4 +28,8 @@ public class SuburbService {
 
         return created;
     }
+
+    public List<Suburb> getAllByPostcode(String postcode) {
+        return this.suburbRepository.findByPostcode(postcode);
+    }
 }
