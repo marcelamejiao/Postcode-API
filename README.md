@@ -50,7 +50,7 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 ![suburb-by-name](./assets/img/suburbs-by-name.png)
 
-* **Get a Suburb by name**
+* **Get a Suburb by postcode**
 
 ![suburb-by-name](./assets/img/suburbs-by-postcode.png)
 
