@@ -1,6 +1,4 @@
 package io.nology.postcodeAPI;
-
-
 import io.nology.postcodeAPI.suburb.Suburb;
 import io.nology.postcodeAPI.suburb.SuburbCreateDTO;
 import io.nology.postcodeAPI.suburb.SuburbRepository;
@@ -10,7 +8,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.modelmapper.ModelMapper;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
@@ -56,6 +53,17 @@ public class SuburbServiceTest {
       assertEquals(suburb, suburbArgument.getValue());
    }
 
+   @Test
+   void getAllByPostcode_ReturnsAllData(){
+      underTest.getAllByPostcode("postcode");
+      Mockito.verify(suburbRepository).findByPostcode("postcode");
+   }
+
+   @Test
+   void getAllByName_ReturnsAllData(){
+      underTest.getAllByName("suburb name");
+      Mockito.verify(suburbRepository).findByName("suburb name");
+   }
 }
 
 
