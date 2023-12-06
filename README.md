@@ -23,7 +23,9 @@ A secured API to add new suburb and postcode combinations
 ## **My experience**
 
 I found this project a good opportunity to continuing practising the Spring framework and the backend testing using the Spring boot testing. 
-A new tool that this project provided me was how to create new methods inside the repository interface to use them in the service layer and being able to implement these methods by finding a suburb with a query parameter such as name or postcode. 
+
+A new tool that this project provided me was how to create new methods inside the repository interface to use them in the service layer and being able to implement these methods by finding a suburb with a query parameter such as name or postcode.
+
 To make this application secured and being able to get access to each endpoint I implemented the Basic Spring Authentication. 
 This implementation provides a password in the console that I could use inside Postman or the login page that Spring provides with the URL: http://localhost:8080/login.
 
