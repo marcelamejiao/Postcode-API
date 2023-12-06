@@ -22,10 +22,13 @@ A secured API to add new suburb and postcode combinations
   
 ## **My experience**
 
-I found this project a good oportunity to continuing practising the Spring framework and the backend testing using the Spring boot testing. 
-A new tool that this project provided me was how to create new methods inside the respository interface to use them in the service layer and being able to implement these methods by finding a suburb with a query parameter such as name or postcode. 
+I found this project a good opportunity to continuing practising the Spring framework and the backend testing using the Spring boot testing. 
+A new tool that this project provided me was how to create new methods inside the repository interface to use them in the service layer and being able to implement these methods by finding a suburb with a query parameter such as name or postcode. 
 To make this application secured and being able to get access to each endpoint I implemented the Basic Spring Authentication. 
-This implementation provides a password in the console that I could use inside Postman or the login page that Spring provides with the URL: http://localhost:8080/login. 
+This implementation provides a password in the console that I could use inside Postman or the login page that Spring provides with the URL: http://localhost:8080/login.
+
+![login](./assets/img/login.png)
+![login](./assets/img/getAll.png)
 
 ## **Usage**
 ```
@@ -41,10 +44,13 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 ## **Preview**
 
-* **Home - Desktop Mode**
+* **Get a Suburb by name**
 
-![]()
+![suburb-by-name](./assets/img/suburbs-by-name.png)
 
+* **Get a Suburb by name**
+
+![suburb-by-name](./assets/img/suburbs-by-postcode.png)
 
 ## **Deployed link**
 
@@ -52,7 +58,7 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 ## **Future Development**
 
-* 
+* Build a frontend with React.
 
 ## **Questions**
 
