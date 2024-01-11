@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -35,5 +36,16 @@ public class SuburbService {
 
     public List<Suburb> getAllByName(String name) {
         return this.suburbRepository.findByName(name);
+    }
+
+    public boolean deleteById(Long id) {
+        Optional<Suburb> foundSuburb = this.suburbRepository.findById(id);
+
+        if(foundSuburb .isPresent()) {
+            this.suburbRepository.delete(foundSuburb.get());
+            return true;
+        }
+
+        return false;
     }
 }

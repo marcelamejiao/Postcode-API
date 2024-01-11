@@ -1,5 +1,6 @@
 package io.nology.postcodeAPI.suburb;
 
+import io.nology.postcodeAPI.exceptions.NotFoundException;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,6 +29,18 @@ public class SuburbController {
         return new ResponseEntity<Suburb>(newSuburb, HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Suburb> deleteById(@PathVariable Long id) {
+        boolean deleted = this.suburbService.deleteById(id);
+
+        if(deleted == true) {
+            return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
+        }
+
+        throw new NotFoundException(String
+                .format("Suburb with id: %d does not exist, could not delete", id));
+    }
+
     @GetMapping("/by-postcode")
     @ResponseBody
     public ResponseEntity<List<Suburb>> getAllByPostcode(@RequestParam String postcode) {
@@ -41,6 +54,4 @@ public class SuburbController {
         List<Suburb> allSuburbs = this.suburbService.getAllByName(name);
         return new ResponseEntity<>(allSuburbs, HttpStatus.OK);
     }
-
-
 }
