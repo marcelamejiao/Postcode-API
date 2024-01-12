@@ -11,6 +11,7 @@
   - [**Deployed link**](#deployed-link)
   - [**Future Development**](#future-development)
   - [**Questions**](#questions)
+  - [**Building Natively**](#building-natively)
 
 
 ## **Description**
@@ -65,3 +66,11 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 ## **Questions**
 
 * Contact me on my GitHub profile: [Marcela's GitHub](https://github.com/marcelamejiao)
+
+## **Building Natively**
+
+To build the docker image for a native Java binary run:
+
+```shell
+./mvnw -Pnative spring-boot:build-image
+```
