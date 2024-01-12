@@ -1,4 +1,4 @@
-FROM maven:3-eclipse-temurin-17-alpine as java-builder
+FROM maven:3-eclipse-temurin-21-alpine as java-builder
 
 WORKDIR /server
 
