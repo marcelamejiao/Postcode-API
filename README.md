@@ -18,10 +18,10 @@
 
 ## **Description**
 
-This project was designed to create an API in Java that allows mobile clients to retrieve and add suburb and postcode combinations.
-This API that allows mobile clients to retrieve the suburb information by postcode.
-This API that allows mobile clients to retrieve a postcode given a suburb name.
-A secured API to add new suburb and postcode combinations 
+This project was designed to create an API in Java that allows mobile clients to retrieve and add suburb and postcode combinations.  
+This API allows mobile clients to retrieve the suburb information by postcode.  
+This API allows mobile clients to retrieve a postcode given a suburb name.  
+A secured API to add new suburb and postcode combinations.
   
 ## **My experience**
 
@@ -69,10 +69,3 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 * Contact me on my GitHub profile: [Marcela's GitHub](https://github.com/marcelamejiao)
 
-## **Building Natively**
-
-To build the docker image for a native Java binary run:
-
-```shell
-./mvnw -Pnative spring-boot:build-image
-```
