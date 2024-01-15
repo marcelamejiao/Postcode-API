@@ -16,6 +16,8 @@
 
 ## **Description**
 
+**Frontend is build and the application is deployed.**
+
 This project was designed to create an API in Java that allows mobile clients to retrieve and add suburb and postcode combinations.
 This API that allows mobile clients to retrieve the suburb information by postcode.
 This API that allows mobile clients to retrieve a postcode given a suburb name.
@@ -57,7 +59,7 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 ## **Deployed link**
 
-💡 Live version: [To be deployed!]()
+💡 Live version: [Click here!](https://postcode-search.apps.marcelamejia.xyz/)
 
 ## **Future Development**
 
