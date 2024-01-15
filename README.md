@@ -1,5 +1,7 @@
 # Postcode-API
 
+💻 Frontend: [Click here!](https://github.com/marcelamejiao/Postcode-Search)
+
 ## **Table of Contents** 
 
   - [**Table of Contents**](#table-of-contents)
@@ -15,8 +17,6 @@
 
 
 ## **Description**
-
-**Frontend is build and the application is deployed.**
 
 This project was designed to create an API in Java that allows mobile clients to retrieve and add suburb and postcode combinations.
 This API that allows mobile clients to retrieve the suburb information by postcode.
