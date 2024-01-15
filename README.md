@@ -63,7 +63,7 @@ Using Eclipse, IntelliJ or a bash terminal/console, run/execute the Main class.
 
 ## **Future Development**
 
-* Build a frontend with React.
+* Build a frontend with React. **Done** ✅
 
 ## **Questions**
 
