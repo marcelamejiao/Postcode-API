@@ -13,7 +13,6 @@
   - [**Deployed link**](#deployed-link)
   - [**Future Development**](#future-development)
   - [**Questions**](#questions)
-  - [**Building Natively**](#building-natively)
 
 
 ## **Description**
